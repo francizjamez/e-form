@@ -50,7 +50,9 @@ export default function PartsTable({ partsCollection, setPartsCollection }) {
 
     return (
       <>
-        <Button onPress={() => setShowModal(true)}>Add new part</Button>
+        <Button borderTopRadius={0} onPress={() => setShowModal(true)}>
+          Add new part
+        </Button>
         <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
           <Modal.Content maxWidth="400px">
             <Modal.CloseButton />

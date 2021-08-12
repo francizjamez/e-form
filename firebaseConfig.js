@@ -1,14 +1,7 @@
 import firebase from "firebase/app";
 
-// Optionally import the services that you want to use
-//import "firebase/auth";
-//import "firebase/database";
 import "firebase/firestore";
-//import "firebase/functions";
-//import "firebase/storage";
 
-// Initialize Firebase
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyD5p8dFEp3nMFyHYClJYpKUERQa6qJY_Hc",
   authDomain: "e-forms-e94da.firebaseapp.com",

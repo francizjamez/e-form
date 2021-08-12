@@ -1,16 +1,5 @@
-import {
-  Box,
-  FormControl,
-  Input,
-  Stack,
-  TextArea,
-  Button,
-  Modal,
-  Heading,
-  Text,
-  HStack,
-} from "native-base";
-import React, { useEffect, useRef, useState } from "react";
+import { Box, Input, Button, Modal, Heading, Text, HStack } from "native-base";
+import React, { useState } from "react";
 import { View } from "react-native";
 import DateTimePicker from "@react-native-community/datetimepicker";
 
@@ -67,10 +56,6 @@ export default function CorrectionTable({
 
     const stepCpy = step;
 
-    useEffect(() => {
-      console.log("this is mounted");
-    }, []);
-
     const addNewCorrection = () => {
       setShowModal(true);
     };
@@ -89,7 +74,9 @@ export default function CorrectionTable({
 
     return (
       <>
-        <Button onPress={() => addNewCorrection()}>Add new correction</Button>
+        <Button borderTopRadius={0} onPress={() => addNewCorrection()}>
+          Add new correction
+        </Button>
         <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
           <Modal.Content maxWidth="400px">
             <Modal.CloseButton />
